@@ -13,7 +13,8 @@
     }
   ],
   "require": {
-    "php": "^7.1.0"
+    "php": "^7.1.0",
+    "magento/module-sales-rule": "101.*"
   },
   "require-dev": {
     "phpunit/phpunit": ">=7.0.0"
