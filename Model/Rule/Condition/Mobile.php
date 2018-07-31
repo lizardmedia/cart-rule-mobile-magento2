@@ -45,7 +45,7 @@ class Mobile extends AbstractCondition
         MobileDetectorInterface $mobileDetector,
         array $data = []
     ) {
-        parent::__construct($context, $data);
+        $this->callParentConstructor($context, $data);
         $this->sourceYesNo = $sourceYesNo;
         $this->mobileDetector = $mobileDetector;
     }
@@ -104,5 +104,16 @@ class Mobile extends AbstractCondition
             ]
         );
         return $this;
+    }
+
+
+    /**
+     * @param Context $context
+     * @param array $data
+     * @codeCoverageIgnore
+     */
+    protected function callParentConstructor(Context $context, array $data): void
+    {
+        parent::__construct($context, $data);
     }
 }
