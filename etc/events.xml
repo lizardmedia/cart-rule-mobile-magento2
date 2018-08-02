@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Maciej Sławik <maciej.slawik@lizardmedia.pl>
+ * @copyright Copyright (C) 2018 Lizard Media (http://lizardmedia.pl)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <event name="salesrule_rule_condition_combine">
+        <observer name="LizardMedia_CartRuleMobile::add_mobile_rule"
+                  instance="LizardMedia\CartRuleMobile\Observer\MobileRule" />
+    </event>
+
+</config>
